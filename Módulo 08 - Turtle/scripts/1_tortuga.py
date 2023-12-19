@@ -4,23 +4,22 @@ import turtle
 window = turtle.Screen()
 window.title("Pruebas con turtle")
 window.bgcolor("#68a0ed")
-window.setup(500, 500)
-window.setworldcoordinates(0, 500, 500, 0)
+window.setup(800, 800)
+window.setworldcoordinates(0, 800, 800, 0)
 
 # personalizacion de la pluma
 kame = turtle.Turtle()
 kame.shape("turtle")
 kame.color("darkgreen")
 kame.pensize(2)
-kame.speed(10)
+kame.speed(2)
 
 # instrucciones de la pluma
 
-for i in range(0, 6):
+for i in range(1, 10):
     kame.penup()
-    kame.goto(i*50, i*25)
+    kame.goto(i * 25, i * 25)
     kame.pendown()
-    kame.circle(i*25)
-
+    kame.circle(i * 25)
 
 turtle.mainloop()
