@@ -4,7 +4,7 @@ import sys
 window = turtle.Screen()
 window.title("Aproximación a los videojuegos")
 window.bgcolor("#68a0ed")
-window.setup(500, 500)
+window.setup(800, 800)
 
 
 class Tortuga(turtle.Turtle):
@@ -16,8 +16,8 @@ class Tortuga(turtle.Turtle):
 
     def mover(self):
         orden = turtle.textinput(
-            "Orden de movimiento requerida",
-            "Movimientos: A W S D")
+            "Orden de movimiento requerida", "Movimientos: A W S D"
+        )
 
         if orden:
             orden = orden.lower()
